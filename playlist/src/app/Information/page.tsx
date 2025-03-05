@@ -6,14 +6,18 @@ import {
     CarouselNext,
     CarouselPrevious,
   } from "@/components/ui/carousel"
+import { Input } from "@/components/ui/input";
+  
 
 export default function Information() {
     return (
     <div className="flex flex-col items-center justify-center h-screen gap-5 bg-gradient-to-b from-black to-green-800 text-white">
      <Carousel>
   <CarouselContent >
-    <CarouselItem className=" grid grid-rows-2 justify-center items-center max-w-screen gap-4">
-        <div className="text-4xl font-semibold text-center"> Select Genre's</div>
+  <CarouselItem className="grid grid-rows-[1fr_auto] justify-center items-center max-w-screen gap-16">
+        <div className="text-4xl font-semibold text-center grid grid-rows-2 gap-5"> Select Genre's
+        <Input></Input>
+        </div>
         <div className="grid grid-cols-3 gap-4 ">
         <Button>Pop</Button>
         <Button>Rock</Button>
