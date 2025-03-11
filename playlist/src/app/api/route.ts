@@ -3,7 +3,7 @@ import OpenAI from "openai";
 
 // Initialize OpenAI with API key from environment variables
 const openai = new OpenAI({
-    apiKey: "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" , // Ensure the API key is set in .env.local
+    apiKey: "" , // Ensure the API key is set in .env.local
 });
 
 // Function to make a request to ChatGPT
